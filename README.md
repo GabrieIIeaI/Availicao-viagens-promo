@@ -1,6 +1,6 @@
 # Projeto de Teste Técnico para ViagensPromo
 
-Este projeto consiste em uma aplicação desenvolvida como parte de um teste técnico para a ViagensPromo. O objetivo principal é apresentar uma listagem de passagens aéreas, permitindo que os usuários visualizem e pesquisem as opções disponíveis de forma simples e eficiente.
+Este projeto consiste em uma aplicação desenvolvida como parte de um teste técnico para a ViagensPromo. O objetivo principal é apresentar uma listagem de passagens aéreas, permitindo que os usuários visualizem a listagem.
 
 ## Tecnologias Utilizadas
 
