@@ -51,18 +51,18 @@ docker --version
 ```
 Se o Docker estiver instalado, a versão será exibida. Caso contrário, siga os passos abaixo.
 
-## 2. Instalando o Docker
-# Windows
+# 2. Instalando o Docker
+## Windows
   1. Baixe o Docker Desktop: Acesse Docker Desktop for Windows e baixe o instalador.
   2. Execute o instalador: Siga as instruções na tela para concluir a instalação.
   3. Reinicie o computador: Após a instalação, reinicie seu computador.
 
-#macOS
+## macOS
   1. Baixe o Docker Desktop: Acesse Docker Desktop for Mac e baixe o instalador.
   2. Arraste o Docker para a pasta Aplicativos: Siga as instruções na tela para concluir a instalação.
   3. Inicie o Docker: Abra o Docker a partir da pasta Aplicativos.
 
-#Linux
+## Linux
 1. Instale as dependências necessárias:
 ```bash
 sudo apt-get update
@@ -97,7 +97,7 @@ bash
 docker --version
 ```
 
-#3. Instalando o Docker Compose
+### 3. Instalando o Docker Compose
 Se você também precisar do Docker Compose, siga os passos abaixo:
 
 1. Baixe a versão mais recente do Docker Compose:
