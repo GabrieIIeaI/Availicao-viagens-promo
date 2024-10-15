@@ -39,74 +39,78 @@ Para executar este projeto, utilize o seguinte comando:
 docker-compose up -d --build
 ```
 
-Passo a Passo para Instalação do Docker e Execução do Projeto
+### Passo a Passo para Instalação do Docker e Execução do Projeto
 Este guia fornece instruções detalhadas sobre como instalar o Docker e executar o projeto ViagensPromo.
 
-Parte 1: Instalação do Docker
+# Parte 1: Instalação do Docker
 1. Verificando se o Docker já está instalado
 Antes de instalar, você pode verificar se o Docker já está instalado em seu sistema executando o seguinte comando no terminal:
 
-bash
-Copiar código
+```bash
 docker --version
+```
 Se o Docker estiver instalado, a versão será exibida. Caso contrário, siga os passos abaixo.
 
-2. Instalando o Docker
-Windows
-Baixe o Docker Desktop: Acesse Docker Desktop for Windows e baixe o instalador.
-Execute o instalador: Siga as instruções na tela para concluir a instalação.
-Reinicie o computador: Após a instalação, reinicie seu computador.
-macOS
-Baixe o Docker Desktop: Acesse Docker Desktop for Mac e baixe o instalador.
-Arraste o Docker para a pasta Aplicativos: Siga as instruções na tela para concluir a instalação.
-Inicie o Docker: Abra o Docker a partir da pasta Aplicativos.
-Linux
-Instale as dependências necessárias:
+## 2. Instalando o Docker
+# Windows
+  1. Baixe o Docker Desktop: Acesse Docker Desktop for Windows e baixe o instalador.
+  2. Execute o instalador: Siga as instruções na tela para concluir a instalação.
+  3. Reinicie o computador: Após a instalação, reinicie seu computador.
 
-bash
-Copiar código
+#macOS
+  1. Baixe o Docker Desktop: Acesse Docker Desktop for Mac e baixe o instalador.
+  2. Arraste o Docker para a pasta Aplicativos: Siga as instruções na tela para concluir a instalação.
+  3. Inicie o Docker: Abra o Docker a partir da pasta Aplicativos.
+
+#Linux
+1. Instale as dependências necessárias:
+```bash
 sudo apt-get update
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
-Adicione a chave GPG do Docker:
+```
 
-bash
-Copiar código
+2. Adicione a chave GPG do Docker:
+```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-Adicione o repositório do Docker:
+```
 
-bash
-Copiar código
+3. Adicione o repositório do Docker:
+```bash
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-Atualize o índice de pacotes:
+```
 
-bash
-Copiar código
+4. Atualize o índice de pacotes:
+
+```bash
 sudo apt-get update
-Instale o Docker:
+```
 
-bash
-Copiar código
+5. Instale o Docker:
+
+```bash
 sudo apt-get install docker-ce
-Verifique a instalação:
+```
 
+6. Verifique a instalação:
 bash
-Copiar código
+```
 docker --version
-3. Instalando o Docker Compose
+```
+
+#3. Instalando o Docker Compose
 Se você também precisar do Docker Compose, siga os passos abaixo:
 
-Baixe a versão mais recente do Docker Compose:
-
-bash
-Copiar código
+1. Baixe a versão mais recente do Docker Compose:
+```bash
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-Dê permissão de execução:
+```
 
+2. Dê permissão de execução:
 bash
-Copiar código
-sudo chmod +x /usr/local/bin/docker-compose
-Verifique a instalação:
+```sudo chmod +x /usr/local/bin/docker-compose
+```
 
-bash
-Copiar código
+3; Verifique a instalação:
+```bash
 docker-compose --version
+```
