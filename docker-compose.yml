@@ -26,10 +26,6 @@ services:
     build: 
       context: ./backend/
       dockerfile: Dockerfile.prod
-    # volumes:
-    #   - type: bind
-    #     source: ./backend/
-    #     target: /usr/src/app
     depends_on:
       db:
         condition: service_healthy
@@ -41,13 +37,7 @@ services:
     build: 
       context: ./frontend/
       dockerfile: Dockerfile.prod
-    # volumes:
-    #   - type: bind
-    #     source: ./frontend/
-    #     target: /usr/src/app
     depends_on:
       - backend
     ports:
       - 3000:3000
-
-  
