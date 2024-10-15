@@ -39,6 +39,9 @@ Para executar este projeto, utilize o seguinte comando:
 docker-compose up -d --build
 ```
 
+
+# PASSOS NECESSÁRIOS CASO NÃO POSSUA O DOCKER NA SUA MAQUINA
+
 ### Passo a Passo para Instalação do Docker e Execução do Projeto
 Este guia fornece instruções detalhadas sobre como instalar o Docker e executar o projeto ViagensPromo.
 
@@ -106,8 +109,8 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 ```
 
 2. Dê permissão de execução:
-bash
-```sudo chmod +x /usr/local/bin/docker-compose
+```bash
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 3; Verifique a instalação:
