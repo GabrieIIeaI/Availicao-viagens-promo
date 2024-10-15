@@ -23,4 +23,19 @@ Este projeto consiste em uma aplicação desenvolvida como parte de um teste té
 Para clonar este repositório, utilize o seguinte comando:
 
 ```bash
-git clone --recurse-submodules [https://github.com/GabrieIIleaI/Availicao-viagens-promo.git](https://github.com/GabrieIIeaI/Availicao-viagens-promo.git)
+git clone --recurse-submodules https://github.com/GabrieIIeaI/Availicao-viagens-promo.git
+```
+
+## Executando projeto com Docker
+
+Navegue até o repositório clonado
+```bash
+cd Availicao-viagens-promo
+```
+
+Para executar este projeto, utilize o seguinte comando:
+
+```bash
+docker-compose up -d --build
+```
+
