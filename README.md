@@ -23,4 +23,4 @@ Este projeto consiste em uma aplicação desenvolvida como parte de um teste té
 Para clonar este repositório, utilize o seguinte comando:
 
 ```bash
-git clone --recurse-submodules https://github.com/GabrieIIleaI/Availicao-viagens-promo.git
+git clone --recurse-submodules [https://github.com/GabrieIIleaI/Availicao-viagens-promo.git](https://github.com/GabrieIIeaI/Availicao-viagens-promo.git)
