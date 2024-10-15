@@ -38,4 +38,3 @@ Para executar este projeto, utilize o seguinte comando:
 ```bash
 docker-compose up -d --build
 ```
-
