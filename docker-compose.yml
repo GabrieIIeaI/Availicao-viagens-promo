@@ -1,0 +1,53 @@
+version: '3'
+
+services:
+  db:
+    container_name: mysql_db
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_USER=admin
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=store
+    volumes:
+      - ./db/mysql_data:/docker-entrypoint-initdb.d
+      - ./db/mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+
+  backend:
+    container_name: backend
+    build: 
+      context: ./backend/
+      dockerfile: Dockerfile.dev
+    volumes:
+      - type: bind
+        source: ./backend/
+        target: /usr/src/app
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - 3001:3001
+    
+  frontend:
+    container_name: frontend
+    build: 
+      context: ./frontend/
+      dockerfile: Dockerfile.dev
+    volumes:
+      - type: bind
+        source: ./frontend/
+        target: /usr/src/app
+    depends_on:
+      - backend
+    ports:
+      - 3000:3000
+
+  

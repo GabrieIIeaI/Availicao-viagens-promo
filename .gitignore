@@ -1,0 +1,3 @@
+# Pastas que devem ser ignoradas pelo git
+mysql
+node_modules
